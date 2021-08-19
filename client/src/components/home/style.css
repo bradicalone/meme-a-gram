@@ -1,0 +1,124 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: #f7f9fc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.header .c-add-meme {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.header .c-add-meme p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.header .c-add-meme div {
+  text-align: center;
+  color: #fff;
+  background-color: #3f51b5;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border: none;
+  font-size: 0.875rem;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  min-height: 36px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 3;
+  border-radius: 50%;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.header .c-add-meme svg {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.c-meme-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.c-meme-grid .empty-memes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.c-meme-grid .m-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 6px 12px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.c-meme-grid .m-grid-item img {
+  width: 100%;
+}
+
+.c-meme-grid .m-grid-item .m-meme-btn {
+  background: #3f51b5;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.c-meme-grid .m-grid-item .m-meme-btn button, .c-meme-grid .m-grid-item .m-meme-btn a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .c-meme-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .c-meme-grid h3 {
+    font-size: calc(1.275rem + 1.5vw);
+  }
+}
+/*# sourceMappingURL=style.css.map */
