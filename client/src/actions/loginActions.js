@@ -22,7 +22,12 @@ export const startLogin = (state) => async (dispatch) => {
                 history.push('/')
             }
         } catch(err) {
-            console.log('err:', err)
+            if(err.response.status == 401) {
+                return dispatch({
+                    type: LOGIN_ERROR,
+                    payload: err.response.data
+                })
+            }
             dispatch({
                 type: LOGIN_ERROR,
                 payload: err

@@ -9,6 +9,8 @@ const pool = new Pool({
     database: "pernmeme"
 });
 
+// const connectionSTring = `postgressql://${process.env.DB_USER}: ${process.env.DB_PASSWORD}@localhost:5432/pernmeme`;
+
 module.exports = pool;
 
 // GRANT ALL PRIVILEGES ON DATABASE pernmeme TO carlsmed;

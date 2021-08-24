@@ -5,6 +5,7 @@ module.exports = (env) => {
     require('dotenv').config()
 
     const isProduction = env === 'production';
+    console.log('isProduction:', isProduction)
 
     return  {
         entry: './client/src/index.js',
